@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - GENERATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>CV Generator</h2>
+        <p>Fill in your details to generate your CV</p>
+
+
+        <!-- Personal Information -->
+
+        <section class="form-section">
+
+            <h2>Personal Information</h2>
+
+            <div class="personal-details">
+
+                <!-- Photo -->
+
+                <div class="photo-upload">
+
+                    <div class="photo-preview">
+
+                        <span class="upload-icon">+</span>
+
+                        <span class="upload-text">
+
+                        </span>
+
+                    </div>
+
+                    <label for="photo">Upload Photo</label>
+
+                    <input type="file" id="photo" accept="image/png, image/jpeg">
+
+                    <small>JPG or PNG • Max 2MB</small>
+
+                </div>
+
+
+                <!-- Basic Details -->
+
+                <div class="basic-details">
+
+                    <div class="input-group">
+                        <label for="fullName">Full Name</label>
+
+                        <input type="text" id="fullName" placeholder="Enter your full name">
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="jobTitle">Professional Title</label>
+
+                        <input type="text" id="jobTitle" placeholder="e.g. Web Developer">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Contact Details -->
+
+            <div class="two-column">
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+
+                    <input type="email" id="email" placeholder="example@gmail.com">
+                </div>
+
+
+                <div class="input-group">
+                    <label for="phone">Phone</label>
+
+                    <input type="tel" id="phone" placeholder="+91 9876543210">
+                </div>
+
+            </div>
+
+
+            <div class="two-column">
+
+                <div class="input-group">
+                    <label for="location">Location</label>
+
+                    <input type="text" id="location" placeholder="City, Country">
+                </div>
+
+
+                <div class="input-group">
+                    <label for="linkedin">LinkedIn</label>
+
+                    <input type="url" id="linkedin" placeholder="LinkedIn profile URL">
+                </div>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label for="github">GitHub</label>
+
+                <input type="url" id="github" placeholder="GitHub profile URL">
+
+            </div>
+
+        </section>
+
+        </section>
+
+        <!-- Professional Summary -->
+
+        <section class="form-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Professional Summary</h2>
+                    <p>Write a brief introduction about yourself</p>
+                </div>
+            </div>
+
+            <textarea id="summary"
+                placeholder="Example: Motivated Web Developer with a strong foundation in HTML, CSS and JavaScript. Passionate about building clean and user-friendly web applications.">
+    </textarea>
+
+        </section>
+
+        <!-- Education -->
+
+        <section class="form-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <h2>Education</h2>
+                    <p>Add your educational qualifications</p>
+                </div>
+
+                <button type="button" class="add-btn" id="addEducationBtn">
+
+                    + Add Education
+
+                </button>
+
+            </div>
+
+
+
+            <div class="education-entry">
+
+                <div class="two-column">
+
+                    <div class="input-group">
+
+                        <label for="degree">Degree</label>
+
+                        <input type="text" id="degree" placeholder="e.g. B.Tech in Computer Science">
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="college">College / University</label>
+
+                        <input type="text" id="college" placeholder="University name">
+
+                    </div>
+
+                </div>
+
+
+                <div class="two-column">
+
+                    <div class="input-group">
+
+                        <label for="educationYear">Year</label>
+
+                        <input type="text" id="educationYear" placeholder="2022 - 2026">
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="cgpa">CGPA / Percentage</label>
+
+                        <input type="text" id="cgpa" placeholder="e.g. 8.5 CGPA">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Skills -->
+
+        <section class="form-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <h2>Skills</h2>
+                    <p>Add the skills that best represent your expertise</p>
+                </div>
+
+                <button type="button" class="add-btn" id="addSkillBtn">
+                    + Add Skill
+                </button>
+
+            </div>
+
+            <div class="skills-container">
+
+                <input type="text" class="skill-input" placeholder="e.g. HTML">
+
+                <input type="text" class="skill-input" placeholder="e.g. CSS">
+
+                <input type="text" class="skill-input" placeholder="e.g. JavaScript">
+
+                <input type="text" class="skill-input" placeholder="e.g. Python">
+
+                <input type="text" class="skill-input" placeholder="e.g. SQL">
+
+                <input type="text" class="skill-input" placeholder="e.g. Git">
+
+            </div>
+
+        </section>
+
+        <!-- Work Experience -->
+
+        <section class="form-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <h2>Work Experience</h2>
+                    <p>Add your professional experience</p>
+                </div>
+
+                <button type="button" class="add-btn" id="addExperienceBtn">
+
+                    + Add Experience
+
+                </button>
+
+            </div>
+
+
+            <div class="experience-entry">
+
+                <div class="two-column">
+
+                    <div class="input-group">
+
+                        <label for="position">Job Title</label>
+
+                        <input type="text" id="position" placeholder="e.g. Software Developer">
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="company">Company</label>
+
+                        <input type="text" id="company" placeholder="Company name">
+
+                    </div>
+
+                </div>
+
+
+                <div class="two-column">
+
+                    <div class="input-group">
+
+                        <label for="duration">Duration</label>
+
+                        <input type="text" id="duration" placeholder="Jan 2024 - Present">
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="experienceLocation">Location</label>
+
+                        <input type="text" id="experienceLocation" placeholder="City, Country">
+
+                    </div>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="experienceDescription">
+                        Description
+                    </label>
+
+                    <textarea id="experienceDescription"
+                        placeholder="Describe your responsibilities, achievements and work...">
+            </textarea>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Projects -->
+
+        <section class="form-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <h2>Projects</h2>
+                    <p>Showcase your best projects and work</p>
+                </div>
+
+                <button type="button" class="add-btn" id="addProjectBtn">
+                    + Add Project
+                </button>
+
+            </div>
+
+
+            <div class="project-entry">
+
+                <div class="input-group">
+
+                    <label for="projectName">Project Name</label>
+
+                    <input type="text" id="projectName" placeholder="e.g. Spotify Clone">
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="projectDescription">
+                        Project Description
+                    </label>
+
+                    <textarea id="projectDescription"
+                        placeholder="Explain what you built, what problem it solves and your contribution...">
+            </textarea>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="technologies">
+                        Technologies Used
+                    </label>
+
+                    <input type="text" id="technologies" placeholder="HTML, CSS, JavaScript">
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="projectLink">
+                        Project Link
+                    </label>
+
+                    <input type="url" id="projectLink" placeholder="https://github.com/username/project">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Certifications -->
+
+        <section class="form-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <h2>Certifications</h2>
+                    <p>Add your professional certifications and achievements</p>
+                </div>
+
+                <button type="button" class="add-btn" id="addCertificationBtn">
+                    + Add Certification
+                </button>
+
+            </div>
+
+
+            <div class="certification-entry">
+
+                <div class="two-column">
+
+                    <div class="input-group">
+
+                        <label for="certificateName">
+                            Certification Name
+                        </label>
+
+                        <input type="text" id="certificateName" placeholder="e.g. JavaScript Certification">
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="certificateIssuer">
+                            Issuing Organization
+                        </label>
+
+                        <input type="text" id="certificateIssuer" placeholder="e.g. Coursera">
+
+                    </div>
+
+                </div>
+
+
+                <div class="two-column">
+
+                    <div class="input-group">
+
+                        <label for="certificateYear">
+                            Year
+                        </label>
+
+                        <input type="text" id="certificateYear" placeholder="2026">
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="certificateLink">
+                            Certificate Link
+                        </label>
+
+                        <input type="url" id="certificateLink" placeholder="Certificate URL">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Generate CV -->
+
+        <div class="generate-section">
+
+            <h2>Ready to create your CV?</h2>
+
+            <p>
+                Review your information and generate your professional CV.
+            </p>
+
+            <button type="button" id="generateBtn">
+                Generate CV
+            </button>
+
+            <button type="button" id="printBtn">
+                Print / Save as PDF
+            </button>
+
+            <button type="button" id="resetBtn">
+                Clear Form
+            </button>
+        </div>
+
+
+        <section class="cv-preview" id="cvPreview">
+
+            <div class="cv-header">
+
+                <div>
+                    <h1 id="cvName">Your Name</h1>
+                    <p id="cvJobTitle">Your Job Title</p>
+                </div>
+
+                <div class="cv-photo" id="cvPhoto"></div>
+
+            </div>
+
+            <div class="cv-contact" id="cvContact">
+                Email | Phone | Location
+            </div>
+
+            <div class="cv-section" id="cvProfileSection">
+                <h2>Profile</h2>
+                <p id="cvSummary"></p>
+            </div>
+
+            <div class="cv-section" id="cvEducationSection">
+                <h2>Education</h2>
+                <div id="cvEducation"></div>
+            </div>
+
+            <div class="cv-section" id="cvExperienceSection">
+                <h2>Experience</h2>
+                <div id="cvExperience"></div>
+            </div>
+
+            <div class="cv-section" id="cvProjectsSection">
+                <h2>Projects</h2>
+                <div id="cvProjects"></div>
+            </div>
+
+            <div class="cv-section" id="cvCertificationSection">
+                <h2>Certifications</h2>
+                <div id="cvCertifications"></div>
+            </div>
+
+            <div class="cv-section" id="cvSkillsSection">
+                <h2>Skills</h2>
+                <div id="cvSkills"></div>
+            </div>
+
+        </section>
+
+        <script src="script.js"></script>
+
+</body>
+
+</html>
